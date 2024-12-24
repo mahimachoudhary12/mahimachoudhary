@@ -1,0 +1,246 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fb; /* Light blue background for a fresh look */
+    color: #333; /* Dark text for good readability */
+    line-height: 1.6;
+}
+
+/* General layout */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* Header */
+header {
+    background-color: #004f8c; /* Dark blue header */
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Styling */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #004f8c; /* Dark blue background */
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white; /* White text for links */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    color: #00bcd4; /* Light blue hover effect */
+    transform: translateY(-3px); /* Slight lift effect for hover */
+}
+
+nav ul li a.active {
+    color: #00bcd4; /* Highlight active link */
+    border-bottom: 2px solid #00bcd4; /* Underline active link */
+}
+
+/* Header - Title Section */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #004f8c; /* Dark blue for headings */
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #007b9f; /* Lighter blue for subheadings */
+}
+
+/* About Section */
+#about {
+    background-color: #ffffff; /* White background for About */
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#about .profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #00bcd4; /* Light blue border for profile image */
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #666; /* Gray color for text */
+}
+
+/* Technical Interests Section */
+#technical {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+#technical .interest {
+    background-color: #ffffff; /* White background for each interest */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#technical .interest h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #004f8c; /* Dark blue for interest headings */
+}
+
+#technical .interest img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#technical .interest p {
+    font-size: 1.1rem;
+    color: #777; /* Lighter gray text for description */
+}
+
+/* Portfolio Section */
+#portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+#portfolio .project {
+    background-color: #ffffff; /* White background for project cards */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#portfolio .project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+#portfolio .project h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #004f8c; /* Dark blue for project titles */
+}
+
+#portfolio .project p {
+    font-size: 1.1rem;
+    color: #666; /* Gray text for project descriptions */
+    margin-bottom: 20px;
+}
+
+#portfolio .project a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00bcd4; /* Light blue for project buttons */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#portfolio .project a:hover {
+    background-color: #0097a7; /* Slightly darker shade of light blue on hover */
+}
+
+/* Project Details Section */
+#project-details {
+    background-color: #ffffff; /* White background for project details */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+#project-details h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #004f8c; /* Dark blue for project detail titles */
+}
+
+#project-details p {
+    font-size: 1.2rem;
+    color: #777; /* Gray color for detailed text */
+    margin-bottom: 30px;
+}
+
+#project-details a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00bcd4; /* Light blue for detail button */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#project-details a:hover {
+    background-color: #0097a7; /* Darker shade of blue for hover effect */
+}
+
+/* Footer */
+footer {
+    background-color: #004f8c; /* Dark blue footer */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+
+
+
